@@ -1,0 +1,6 @@
+{
+  "language": "en-only",
+  "mode": "catalog-only",
+  "excluded": ["gitnexus-cli", "gitnexus-guide", "gitnexus-lfg", "gitnexus-plan", "gitnexus-work"],
+  "included": ["docker", "github", "memory", "search", "gitnexus-debugging", "gitnexus-exploring", "gitnexus-impact-analysis", "gitnexus-pdg-query", "gitnexus-refactoring", "gitnexus-review", "gitnexus-taint-analysis", "cloudflare-email-service", "web-perf", "workers-best-practices", "wrangler"]
+}
