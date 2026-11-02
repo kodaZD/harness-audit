@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "references": {
+    "harness-audit": {
+      "path": "./",
+      "description": "Local read-only audit of agent sessions, skills, and MCP usage"
+    }
+  },
+  "skills": {
+    "paths": ["./opencode/skills"]
+  },
+  "permission": {
+    "bash": {
+      "harness-audit *": "allow"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "mode": "catalog-only",
+  "language": "en-only",
+  "automaticRouting": false,
+  "excludedFromAutomaticRouting": [
+    {"skill": "gitnexus-cli", "reason": "Explicit command/index maintenance interface."},
+    {"skill": "gitnexus-guide", "reason": "Explicit GitNexus documentation lookup."},
+    {"skill": "gitnexus-lfg", "reason": "Multi-stage orchestrator with a plan gate."},
+    {"skill": "gitnexus-plan", "reason": "Explicit planning workflow and depth choice."},
+    {"skill": "gitnexus-work", "reason": "Side-effectful implementation workflow."}
+  ],
+  "promotionGate": {
+    "top1AccuracyPercent": 90,
+    "top3RecallPercent": 90,
+    "maximumFalseAcceptRatePercent": 5,
+    "maximumFalseDeclineRatePercent": 10,
+    "minimumNoSkillCases": 20,
+    "minimumAdversarialCases": 15,
+    "minimumPositiveCases": 50,
+    "requireIndependentHoldout": true
+  }
+}
